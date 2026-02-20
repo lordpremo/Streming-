@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin – BROKEN LORD Streamflix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-dark">
+  <header class="header">
+    <div class="logo">ADMIN <span>PANEL</span></div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div id="loginBox" class="card">
+      <h2>Admin Login</h2>
+      <input id="adminPassword" type="password" placeholder="Enter admin password">
+      <button onclick="adminLogin()">Login</button>
+      <p class="hint">Default password: <b>lordpremo</b> (badilisha ndani ya admin.js)</p>
+    </div>
+
+    <div id="adminPanel" class="admin-panel hidden">
+      <section class="card">
+        <h2>Add / Edit Channel</h2>
+        <input id="chId" placeholder="ID (leave empty for new)">
+        <input id="chName" placeholder="Channel name">
+        <input id="chCategory" placeholder="Category (Sports, Movies...)">
+        <input id="chThumb" placeholder="Thumbnail URL">
+        <input id="chStream" placeholder="Streaming URL (.m3u8, mp4, etc)">
+        <button onclick="saveChannel()">Save Channel</button>
+      </section>
+
+      <section class="card">
+        <h2>Channels List</h2>
+        <div id="adminChannelsList" class="admin-list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Export channels.json</h2>
+        <button onclick="downloadChannels()">Download channels.json</button>
+      </section>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+      </html>
