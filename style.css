@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body-dark {
+  background: #050509;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.logo span {
+  color: #e50914;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+
+.main {
+  padding: 24px 32px 40px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.channel-card {
+  background: #141414;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.channel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.channel-thumb {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+
+.channel-body {
+  padding: 8px 10px 10px;
+}
+.channel-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.channel-category {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.player-main {
+  padding: 24px 32px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.player-card {
+  max-width: 900px;
+  width: 100%;
+}
+
+.player-video-wrapper {
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.player-video {
+  width: 100%;
+  height: 480px;
+  background: #000;
+}
+
+.player-info {
+  margin-top: 12px;
+}
+.player-info h2 {
+  font-size: 20px;
+}
+.chip {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e50914;
+  font-size: 12px;
+}
+
+.card {
+  background: #141414;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.card button {
+  margin-top: 8px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #e50914;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.card button:hover {
+  background: #f6121d;
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
+
+.admin-panel {
+  margin-top: 16px;
+}
+
+.admin-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.admin-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #222;
+  font-size: 14px;
+}
+.admin-item span {
+  flex: 1;
+}
+.admin-item button {
+  margin-left: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
