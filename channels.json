@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sports1",
+    "name": "BROKEN LORD SPORTS 1",
+    "category": "Sports",
+    "thumbnail": "https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg",
+    "stream_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": "movies1",
+    "name": "BROKEN LORD MOVIES HD",
+    "category": "Movies",
+    "thumbnail": "https://images.pexels.com/photos/799137/pexels-photo-799137.jpeg",
+    "stream_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  }
+]
